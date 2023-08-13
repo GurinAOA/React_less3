@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 300px;
+  height: 411px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.picture {
+  width: 276px;
+  height: 220px;
+}
+.price {
+  margin-top: 16px;
+  color: #000;
+  font-family: Nunito;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 100%;
+}
+.description {
+  margin-top: 8px;
+  color: #000;
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+}
+.weight {
+  margin-top: 29px;
+  color: #b1b1b1;
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 130%;
+
+}
+.wr{
+  width: 276px;
+  height: 220px;
+}

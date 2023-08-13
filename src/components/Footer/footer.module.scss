@@ -1,0 +1,99 @@
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  box-sizing: border-box;
+}
+.wrap {
+  max-width: 1440px;
+  min-height: 244px;
+}
+
+.container {
+  max-width: 1290px;
+  margin: 0 auto;
+  min-height: 244px;
+  display: flex;
+  justify-content: space-around;
+margin-top: 52px;
+}
+.logo_item{
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+}
+.logo {
+  max-width: 229px;
+  min-height: 37px;
+}
+.blockLogo {
+  max-width: 229px;
+  min-height: 37px;
+}
+.blockLogo {
+  display: flex;
+  flex-direction: row;
+  max-width: 296px;
+  height: 244px;
+  justify-content: center;
+  align-items: start;
+}
+.blockPhone {
+  max-width: 344px;
+  height: 244px;
+}
+.blockContacts{
+    max-width: 344px;
+    height: 244px;
+}
+.call {
+  display: flex;
+  flex-direction: row;
+  margin-top: 12px;
+}
+.number {
+  color: #000;
+  font-family: Nunito;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 100%;
+}
+.phone {
+  margin-top: 26px;
+  color: #000;
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+  height: 21px;
+  width: 139px;
+}
+.social {
+  color: #000;
+  font-family: Nunito;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.telegram {
+  margin-right: 17px;
+}
+.wrap_author {
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.author {
+  display: inline-block;
+  margin-top: 10px;
+  width: 440px;
+  color: #000;
+  font-family: Nunito;
+  font-size: 12px;
+  font-weight: 400;
+  margin-left: -80px;
+}
+.signs{
+  margin-top: 22px;
+}

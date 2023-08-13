@@ -1,0 +1,38 @@
+[
+  {
+    "picture": "../../Main/images/burgerfirst.png",
+    "price": "689₽",
+    "description": "Мясная бомба",
+    "weight": "520г"
+  },
+  {
+    "picture": "../Main/images/burger second.png",
+    "price": "550₽",
+    "description": "Супер сырный",
+    "weight": "512г"
+  },
+  {
+    "picture": "../Main/images/photo third.png",
+    "price": "639₽",
+    "description": "Сытный",
+    "weight": "580г"
+  },
+  {
+    "picture": "../Main/images/burger fourth.png",
+    "price": "480₽",
+    "description": "Тяжелый удар",
+    "weight": "470г"
+  },
+  {
+    "picture": "../Main/images/burger fifth.png",
+    "price": "450₽",
+    "description": "Вечная классика",
+    "weight": "450г"
+  },
+  {
+    "picture": "../Main/images/burger sixth.png",
+    "price": "560₽",
+    "description": "Итальянский",
+    "weight": "510г"
+  }
+]
