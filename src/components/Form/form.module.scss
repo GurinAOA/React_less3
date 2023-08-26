@@ -1,0 +1,55 @@
+.wrapper {
+  width: 350px;
+  min-height: 200px;
+  position: relative;
+}
+.registrationform {
+  position: absolute;
+  top: -30px;
+  left: 20px;
+}
+
+.registr_form_login,
+.registr_form_pass {
+  border-radius: 12px;
+  border: 1px solid #f2f2f3;
+  background: #fff;
+  display: flex;
+  width: 294px;
+  padding: 12px;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Nunito;
+}
+.registrationformtitle {
+  color: white;
+  font-family: Nunito;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 auto;
+  width: 200px;
+}
+.container {
+  width: 276px;
+  height: 40px;
+}
+.reg_btn {
+    display: flex;
+  width: 276px;
+  height: 40px;
+  margin-top: 20px;
+  padding: 11px 92px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  color: #000;
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 12px;
+  background: #f2f2f3;
+  border: none;
+  margin-bottom: 20px;
+}

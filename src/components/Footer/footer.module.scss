@@ -6,17 +6,18 @@
 .wrap {
   max-width: 1440px;
   min-height: 244px;
+  margin-top: 200px;
 }
 
 .container {
-  max-width: 1290px;
-  margin: 0 auto;
+  // max-width: 1290px;
+  // margin: 0 auto;
   min-height: 244px;
   display: flex;
   justify-content: space-around;
-margin-top: 52px;
+  margin-top: 52px;
 }
-.logo_item{
+.logo_item {
   display: flex;
   flex-direction: column;
   height: 200px;
@@ -35,15 +36,15 @@ margin-top: 52px;
   max-width: 296px;
   height: 244px;
   justify-content: center;
-  align-items: start;
+  // align-items: start;
 }
 .blockPhone {
   max-width: 344px;
   height: 244px;
 }
-.blockContacts{
-    max-width: 344px;
-    height: 244px;
+.blockContacts {
+  max-width: 344px;
+  height: 244px;
 }
 .call {
   display: flex;
@@ -82,7 +83,7 @@ margin-top: 52px;
   width: 140px;
   display: flex;
   flex-direction: column;
-  
+  margin-top: -100px;;
 }
 .author {
   display: inline-block;
@@ -94,6 +95,21 @@ margin-top: 52px;
   font-weight: 400;
   margin-left: -80px;
 }
-.signs{
+.signs {
   margin-top: 22px;
+}
+.commonLogo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.logoImg {
+  width: 67px;
+  height: 67px;
+}
+.logo {
+  width: 230px;
+  height: 67px;
 }

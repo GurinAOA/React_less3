@@ -9,7 +9,8 @@ function App() {
     <div className={s.container}>
       <Header />
       <Main />
-      <Footer />
+      <Footer /> 
+   
     </div>
   );
 }

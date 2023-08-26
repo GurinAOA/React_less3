@@ -10,9 +10,11 @@ import mainSignSix from "../Main/images/Пицца.svg";
 import mainSignSeven from "../Main/images/Вок.svg";
 import mainSignEight from "../Main/images/Десерты.svg";
 import mainSignNine from "../Main/images/Соусы.svg";
+// import delivery from "../Main/images/free-icon-delivery-2362252.svg";
 import card from "../data/data.json";
-import bagBurger from "../Main/images/bag burger.png";
-import delivery from "../Main/images/free-icon-delivery-2362252.svg";
+import basket from "../data/basket.json";
+import Basket from "../Basket/Basket";
+import ItemBasket from "../ItemBasket/ItemBasket";
 
 export default function Main() {
   return (
@@ -56,58 +58,14 @@ export default function Main() {
         </button>
       </div>
       <h1 className={s.headling}>Бургеры</h1>
-      <div className={s.wrapper}>
+      <div className={s.mainwrap}>
         <div className={s.wrapper_bag}>
-          <div className={s.common}>
-            <h2 className={s.title}>Корзина</h2>
-            <div className={s.quantity}></div>
-          </div>
-          <div className={s.wr_bags_cards}>
-            <img src={bagBurger} alt="" className={s.bagBurger} />
-            <div className={s.wr_bags_text}>
-              <span className={s.wr_bags_cards_burgername}>Супер сырный</span>
-              <span className={s.wr_bags_weight}>512г</span>
-              <span className={s.wr_bags_price}>550₽</span>
-            </div>
-            <div className={s.wr_bags_btn}>
-              <button className={s.bags_btn}>-1+</button>
-            </div>
-          </div>
-          <div className={s.wr_bags_cards}>
-            <img src={bagBurger} alt="" className={s.bagBurger} />
-            <div className={s.wr_bags_text}>
-              <span className={s.wr_bags_cards_burgername}>Супер сырный</span>
-              <span className={s.wr_bags_weight}>512г</span>
-              <span className={s.wr_bags_price}>550₽</span>
-            </div>
-            <div className={s.wr_bags_btn}>
-              <button className={s.bags_btn}>-1+</button>
-            </div>
-          </div>
-          <div className={s.wr_bags_cards}>
-            <img src={bagBurger} alt="" className={s.bagBurger} />
-            <div className={s.wr_bags_text}>
-              <span className={s.wr_bags_cards_burgername}>Супер сырный</span>
-              <span className={s.wr_bags_weight}>512г</span>
-              <span className={s.wr_bags_price}>550₽</span>
-            </div>
-            <div className={s.wr_bags_btn}>
-              <button className={s.bags_btn}>-1+</button>
-            </div>
-          </div>
-          <div className={s.wr_sum}>
-            <span>Итого</span>
-          </div>
-          <button className={s.wr_sum_btn}>Оформить</button>
-          <div className={s.wr_delivery}>
-            <img src={delivery} alt="" className={s.delivery} />
-            <span className={s.wr_free}>Бесплатная доставка</span>
-          </div>
+            <Basket/>
         </div>
-
+      
         <div className={s.container_common}>
           {card.map((element, index) => (
-            <Item object={element} />
+            <Item object={element} key={index} />
           ))}
         </div>
       </div>

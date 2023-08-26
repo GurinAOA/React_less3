@@ -11,10 +11,14 @@ export default function Footer() {
     <div className={s.wrap}>
       <div className={s.container}>
         <div className={s.logo_item}>
+          <div className={s.commonLogo}>
         <div className={s.blockLogo}>
           <img src={logoFooter} alt="logo" className={s.logo} />
+          </div>
+          <div className={s.blockLogo}>
           <img src={logoFooterImg} alt="logo" className={s.logoImg} />
-        </div>
+          </div>
+          </div>
         <div className={s.wrap_author}>
         <span className={s.author}>© YouMeal, 2022</span>
         <span className={s.author}>Design: Anastasia Ilina</span>

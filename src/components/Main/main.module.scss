@@ -1,8 +1,3 @@
-* {
-  margin: 0 auto;
-  padding: 0 auto;
-  box-sizing: border-box;
-}
 
 .container {
   max-width: 1290px;
@@ -30,6 +25,7 @@
   align-items: center;
   gap: 8px;
   border: none;
+  cursor: pointer;
 }
 .btn_sign:hover {
   background: #ffab08;
@@ -42,7 +38,6 @@
 }
 .headling {
   margin-left: 310px;
-  margin-bottom: 36px;
   width: 166px;
   height: 48px;
   margin-top: 59px;
@@ -51,6 +46,10 @@
   font-size: 40px;
   font-weight: 600;
   line-height: 120%;
+}
+.mainwrap {
+  display: flex;
+  flex-direction: row;
 }
 .wrapper {
   max-width: 1290px;
@@ -65,6 +64,7 @@
   border-radius: 18px;
   background: #fff;
   padding: 16px;
+  margin-top: 20px;
 }
 .container_common {
   width: 1100px;
@@ -82,85 +82,29 @@
   line-height: 100%;
   width: 98px;
   height: 24px;
+  display: block;
+  width: 90px;
 }
 .quantity {
   width: 41px;
   height: 20px;
   border-radius: 6px;
   background: #f2f2f3;
+  color: #000;
+  text-align: center;
+  font-family: Nunito;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  display: block;
 }
 .common {
   width: 268px;
   display: flex;
-  justify-content: row;
-  margin-top: 24px;
-  justify-content: space-between;
-}
-.wr_bags_text {
-  display: flex;
-  flex-direction: column;
-}
-.wr_bags_cards {
-  display: flex;
   flex-direction: row;
-  width: 268px;
-  height: 84px;
-  flex-shrink: 0;
-  border-top: 1px solid #f2f2f3;
-  border-bottom: 1px solid #f2f2f3;
-  margin: 16px 0;
-}
-.wr_bags_btn {
-  color: #000;
-  font-family: Nunito;
-  font-size: 16px;
-  font-weight: 400;
-  width: 84px;
-  height: 40px;
-  border-radius: 12px;
-  background: #f2f2f3;
-}
-.bags_btn {
-  color: #000;
-  font-family: Nunito;
-  font-size: 16px;
-  font-weight: 400;
-  width: 84px;
-  height: 40px;
-  border-radius: 12px;
-  background: #f2f2f3;
-}
-.wr_bags_text {
-  width: 90px;
-  margin-left: 5px;
-  text-align: center;
-}
-.wr_bags_cards_burgername {
-  color: #000;
-  font-family: Nunito;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: normal;
-}
-.wr_bags_weight {
-  color: #b1b1b1;
-  font-family: Nunito;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: normal;
-}
-.wr_bags_price {
-  margin-top: 10px;
-  color: #000;
-  font-family: Nunito;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.bagBurger {
-  width: 64px;
-  height: 52px;
+  margin-top: 24px;
+  justify-content: space-around;
+  align-items: center;
 }
 .wr_sum_btn {
   margin-top: 24px;
@@ -176,6 +120,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 100%;
+  border: none;
 }
 .wr_free {
   margin-top: 12px;

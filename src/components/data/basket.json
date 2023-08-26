@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "url": "bagburger",
+    "price": "689₽",
+    "description": "Мясная бомба",
+    "weight": "520г",
+    "sum": 689,
+    "number":1
+  },
+  {
+    "id": 2,
+    "url": "bagfries",
+    "price": "550₽",
+    "description": "Супер сырный",
+    "weight": "512г",
+    "sum": 550,
+    "number":2
+  },
+  {
+    "id": 3,
+    "url": "baghotdog",
+    "price": "639₽",
+    "description": "Сытный",
+    "weight": "580г",
+    "sum": 639,
+    "number":3
+  }
+]
