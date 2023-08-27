@@ -7,7 +7,8 @@ export default function ItemBasket(props) {
   const [cardsBasket, setCardsBasket] = useState(basket);
   function minus(id) {
     const arr = cardsBasket.map((item) => {
-      if (item.id === id) {
+
+      if (item.id === id ) {
         item.number -= 1;
         return item;
       }
@@ -17,13 +18,14 @@ export default function ItemBasket(props) {
   }
   function plus(id) {
     const arr = cardsBasket.map((item) => {
-      if (item.id === id) {
+      if (item.id === id ) {
         item.number += 1;
         return item;
       }
       return item;
     });
     setCardsBasket(arr);
+   
   }
   return (
     <div className={s.basket_wrap}>
@@ -40,6 +42,7 @@ export default function ItemBasket(props) {
       <div className={s.wr_bags_btn_container}>
         <button
           onClick={() => {
+            if(props.object.number>0)
             minus(props.object.id);
           }}
           className={s.bags_btn}

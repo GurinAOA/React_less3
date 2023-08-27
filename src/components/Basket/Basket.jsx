@@ -4,21 +4,24 @@ import basketJson from "../data/basket.json";
 import delivery from "../Main/images/free-icon-delivery-2362252.svg";
 import ItemBasket from "../ItemBasket/ItemBasket";
 
+
 import { useState } from "react";
 
 export default function Basket() {
   const [basket, setBasket] = useState(basketJson);
+
  
   function getTotalSum() {
     let count = 0;
-    basket.forEach((item) => {
+    basketJson.forEach((item) => {
       count += item.number * item.sum;
     });
     return count;
+   
   }
   function getTotalQuantity(){
     let count = 0;
-    basket.forEach((item) => {
+    basketJson.forEach((item) => {
       count += item.number;
     });
     return count;
@@ -30,7 +33,7 @@ export default function Basket() {
       <div className={s.common}>
         <h2 className={s.title}>Корзина</h2>
         <div className={s.quantity}>
-          
+
          {getTotalQuantity()}
         </div>
       </div>

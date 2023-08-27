@@ -1,10 +1,10 @@
-
 .wrap_logo {
   display: flex;
   align-items: center;
   justify-content: center;
   align-items: center;
   width: 150px;
+  position: relative;
 }
 .logo {
   max-width: 114px;
@@ -35,8 +35,23 @@
 .wr_title {
   margin-top: 68px;
 }
+
 .header_text {
   margin-top: 52px;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 .header_title {
   width: 437px;
@@ -45,6 +60,20 @@
   font-size: 50px;
   font-weight: 800;
   line-height: 120%;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 .header_title_red {
   width: 437px;
@@ -53,6 +82,20 @@
   font-size: 50px;
   font-weight: 800;
   line-height: 120%;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 .header_text {
   color: #fff;
@@ -62,10 +105,23 @@
   font-weight: 600;
   line-height: normal;
 }
-.bg{
+.bg {
   max-width: 1440px;
   width: 100%;
   min-height: 466px;
   background-image: url(../Header/images/bg.png);
   background-size: cover;
+}
+.wrap_reg_logo {
+  width: 70px;
+  height: 70px;
+}
+.reg_logo {
+  width: 70px;
+  height: 70px;
+  background-color: #ff5c00;
+  border-radius: 50px;
+  position: absolute;
+  top: 10px;
+  left: 600px;
 }

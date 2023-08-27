@@ -9,7 +9,7 @@ export default function Form() {
   function getDataUser() {
     const obj = {
       log: login,
-      pas: password
+      pas: password,
     };
     setLogin("");
     setPassword("");
@@ -18,8 +18,9 @@ export default function Form() {
 
   return (
     <div className={s.wrapper}>
+ 
       <form className={s.registrationform}>
-        <h2 className={s.registrationformtitle}>Регистрация</h2>
+      <h2 className={s.registrationformtitle}>Регистрация</h2>
         <div>
           <input
             className={s.registr_form_login}
@@ -39,6 +40,9 @@ export default function Form() {
           />
         </div>
         <div className={s.container}>
+        <button type="button" className={s.reg_btn} onClick={getDataUser}>
+            Войти
+          </button>
           <button type="button" className={s.reg_btn} onClick={getDataUser}>
             Зарегистрироваться
           </button>
