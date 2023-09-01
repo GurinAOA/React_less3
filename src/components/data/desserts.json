@@ -1,0 +1,21 @@
+[
+  {
+    "title": "Дессерты",
+    "url": "dessertfirst",
+    "price": "150₽",
+    "description": "Сладкий айсберг",
+    "weight": "512г"
+  },
+  {
+    "url": "dessertsecond",
+    "price": "250₽",
+    "description": "Супер вкусный",
+    "weight": "512г"
+  },
+  {
+    "url": "dessertthird",
+    "price": "170₽",
+    "description": "Воздушный",
+    "weight": "512г"
+  }
+]

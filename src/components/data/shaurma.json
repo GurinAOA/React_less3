@@ -1,0 +1,21 @@
+[
+  {
+    "title": "Шаурма",
+    "url": "shaurmafirst",
+    "price": "470₽",
+    "description": "С курицей",
+    "weight": "253г"
+  },
+  {
+    "url": "shaurmasecond",
+    "price": "480₽",
+    "description": "Со свининой",
+    "weight": "252г"
+  },
+  {
+    "url": "shaurmathird",
+    "price": "570₽",
+    "description": "С рыбой",
+    "weight": "352г"
+  }
+]

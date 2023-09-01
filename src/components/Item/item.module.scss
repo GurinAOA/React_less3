@@ -1,13 +1,14 @@
 
 
 .container {
-  width: 300px;
-  height: 411px;
+  width: 1100px;
+ min-height: 800px;
   display: flex;
   flex-direction: column;
   // justify-content: center;
   align-items: center;
   margin-top: 30px;
+  flex-wrap: wrap;
 }
 .picture {
   width: 276px;
@@ -39,10 +40,29 @@
 
 }
 .wr{
-  width: 276px;
+  width: 1100px;
   height: 220px;
+  display: flex;
+  flex-direction: row;
+  padding-right: 40px;
+  flex-wrap: wrap;
 }
 .basket_wrap{
   display: flex;
   flex-direction: row;
+}
+.wr_title{
+padding-right: 950px;
+  width: 166px;
+  height: 48px;
+  color: #000;
+  font-family: Nunito;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 120%;
+}
+.img{
+  margin-top: 20px;
+  width:278px;
+  height: 200px;
 }

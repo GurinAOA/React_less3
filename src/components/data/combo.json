@@ -1,0 +1,21 @@
+[
+  {
+    "title": "Комбо",
+    "url": "combofirst",
+    "price": "200₽",
+    "description": "Комбо номер один",
+    "weight": "420г"
+  },
+  {
+    "url": "combosecond",
+    "price": "350₽",
+    "description": "Комбо номер два",
+    "weight": "520г"
+  },
+  {
+    "url": "combothird",
+    "price": "240₽",
+    "description": "Комбо номер три",
+    "weight": "820г"
+  }
+]

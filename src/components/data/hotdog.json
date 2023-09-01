@@ -1,0 +1,21 @@
+[
+  {
+    "title": "ХотДог",
+    "url": "hotdogfirst",
+    "price": "250₽",
+    "description": "С колбаской",
+    "weight": "212г"
+  },
+  {
+    "url": "hotdogsecond",
+    "price": "350₽",
+    "description": "С сосиской",
+    "weight": "113г"
+  },
+  {
+    "url": "hotdogthird",
+    "price": "180₽",
+    "description": "Полезный",
+    "weight": "112г"
+  }
+]

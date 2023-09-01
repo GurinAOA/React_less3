@@ -1,0 +1,47 @@
+[
+    {     
+        "categories": "Бургеры",
+        "url": "burger",
+        "id":1
+    },
+    {     
+        "categories": "Закуски",
+        "url":"snack" ,
+        "id":2 
+    },
+    {     
+        "categories": "Хот-доги",
+        "url":"hotdog",
+        "id":3  
+    },
+    {     
+        "categories": "Комбо",
+        "url":"combo",
+        "id":4  
+    },
+    {     
+        "categories": "Шаурма",
+        "url":"shaurma",
+        "id":5  
+    },
+    {     
+        "categories": "Пицца",
+        "url":"pizza",
+        "id":6  
+    },
+    {     
+        "categories": "Вок",
+        "url":"vok",
+        "id":7  
+    },
+    {     
+        "categories": "Десерты",
+        "url":"desserts",
+        "id":8  
+    },
+    {     
+        "categories": "Соусы",
+        "url":"sauce",
+        "id":9  
+    }
+]

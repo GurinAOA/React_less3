@@ -1,0 +1,21 @@
+[
+  {
+    "title": "Соус",
+    "url": "soucefirst",
+    "price": "70₽",
+    "description": "Кетчуп",
+    "weight": "53г"
+  },
+  {
+    "url": "soucesecond",
+    "price": "80₽",
+    "description": "Сырный",
+    "weight": "52г"
+  },
+  {
+    "url": "soucethird",
+    "price": "70₽",
+    "description": "Майонез",
+    "weight": "52г"
+  }
+]

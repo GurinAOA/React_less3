@@ -1,0 +1,21 @@
+[
+  {
+    "title": "Вок",
+    "url": "vokfirst",
+    "price": "370₽",
+    "description": "Супер вок",
+    "weight": "553г"
+  },
+  {
+    "url": "voksecond",
+    "price": "380₽",
+    "description": "Острый вок",
+    "weight": "552г"
+  },
+  {
+    "url": "vokthird",
+    "price": "370₽",
+    "description": "Сытный вок",
+    "weight": "552г"
+  }
+]

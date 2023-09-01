@@ -1,0 +1,21 @@
+[
+  {
+    "title": "Закуски",
+    "url": "snackfirst",
+    "price": "370₽",
+    "description": "На компанию",
+    "weight": "253г"
+  },
+  {
+    "url": "snacksecond",
+    "price": "380₽",
+    "description": "Фуршетная",
+    "weight": "252г"
+  },
+  {
+    "url": "snackthird",
+    "price": "370₽",
+    "description": "Аппетитная",
+    "weight": "352г"
+  }
+]
