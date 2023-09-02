@@ -7,8 +7,8 @@ export default function Tabs(props) {
     props.editCount(index);
   }
   return (
-    <div className={s.wr_tab}>
-      <div className={s.tab}>
+    <div className={s.wrap_tabs}>
+      <div className={s.tabs}>
         {tabs.map((element, index) => (
           <div className={s.sp} key={index}>
             <div
