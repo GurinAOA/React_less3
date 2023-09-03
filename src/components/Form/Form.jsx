@@ -20,7 +20,7 @@ export default function Form() {
     <div className={s.wrapper}>
  
       <form className={s.registrationform}>
-      <h2 className={s.registrationformtitle}>Регистрация</h2>
+      <h2 className={s.registrationformtitle}>Авторизоваться</h2>
         <div>
           <input
             className={s.registr_form_login}

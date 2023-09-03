@@ -125,13 +125,41 @@
   top: 10px;
   left: 600px;
 }
-.bg a {
+.bg_link a {
   color: white;
   padding: 40px;
-  margin-top: 20px;
-  margin-left: 40px;
-  font-size: large;
+  font-size: 27px;
+  font-weight: 900;
+  cursor: pointer;
+  text-decoration: none;
 }
-.active{
-  background-color: white;
+.bg_link a:hover {
+  background: #ffab08;
+  border: none;
+}
+// .active{
+// color: white;
+// }
+
+.bg_form a {
+  color: black;
+  padding: 40px;
+  font-size: 27px;
+  font-weight: 900;
+  cursor: pointer;
+  text-decoration: none;
+}
+.bg_wrapper {
+  display: flex;
+}
+.bg_form {
+  display: flex;
+  justify-content: space-around;
+}
+.bg_link {
+  display: flex;
+  justify-content: space-around;
+}
+.icon_basket {
+  width: 60px;
 }
