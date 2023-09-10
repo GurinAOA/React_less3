@@ -1,19 +1,15 @@
 import React from "react";
 import s from "./ItemBasket.module.scss";
-
+import delBasket from "../../img/delbasketpng.png";
 
 export default function ItemBasket(props) {
-
-  function delBasket(){
-    props.setBasket([])
-  }
-
-
+  //   function delBasket() {
+  //     props.setBasket([]);
+  //   }
 
   function minus(id) {
     const arr = props.basket.map((item) => {
-
-      if (item.id === id ) {
+      if (item.id === id) {
         item.number -= 1;
         return item;
       }
@@ -23,15 +19,15 @@ export default function ItemBasket(props) {
   }
   function plus(id) {
     const arr = props.basket.map((item) => {
-      if (item.id === id ) {
+      if (item.id === id) {
         item.number += 1;
         return item;
       }
       return item;
     });
     props.setBasket(arr);
-   
   }
+  // delBasket();
   return (
     <div className={s.basket_wrap}>
       <img
@@ -47,10 +43,8 @@ export default function ItemBasket(props) {
       <div className={s.wr_bags_btn_container}>
         <button
           onClick={() => {
-            if(props.object.number>0)
-            minus(props.object.id)
+            if (props.object.number > 0) minus(props.object.id);
           }}
-         
           className={s.bags_btn}
         >
           -
@@ -63,6 +57,18 @@ export default function ItemBasket(props) {
           className={s.bags_btn}
         >
           +
+        </button>
+      </div>
+      <div className={s.wr_del_btn}>
+        <button
+          onClick={() => {
+            props.setBasket([]);
+            props.delBasket(props.object.id);
+          }}
+          className={s.del_btn}
+          type="button"
+        >
+          <img src={delBasket} alt="delBasket" className={s.delBasket} />
         </button>
       </div>
     </div>

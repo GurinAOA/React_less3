@@ -19,7 +19,6 @@ export default function Header() {
           <div className={s.bg_form}>
             <NavLink to="/authorization">Войти</NavLink>
             <NavLink to="/register">Зарегистрироваться</NavLink>
-            <NavLink to="/error">Error</NavLink>
             <NavLink to="/basketpage">
               <div className={s.wrap_icon}>
                 <img

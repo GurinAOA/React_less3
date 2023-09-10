@@ -2,7 +2,11 @@ import React from "react";
 import s from "./registration.module.scss";
 import { useState } from "react";
 
+
 export default function Registration() {
+
+  const [formReg, setFormReg] = useState (true)
+
   const [login, setLogin] = useState("");
   const [password, setPassword] = useState("");
   const [copypassword, setCopypassword] = useState("");
@@ -31,12 +35,19 @@ export default function Registration() {
     localStorage.setItem("user", JSON.stringify(obj));
   }
 
+  function closeRegForm(){
+    setFormReg (false)
+  }
+
   return (
     <div className={s.wrapper}>
       <form className={s.registrationform}>
         <div className={s.wr_close}>
         <h2 className={s.registrationformtitle}>Регистрация</h2>
-        <button className={s.window_close} type="button">X</button>
+        <button    onClick={() => {
+         closeRegForm();
+        }}
+         className={s.window_close} type="button">X</button>
         </div>
         <div>
           <input
@@ -44,7 +55,7 @@ export default function Registration() {
             type="text"
             placeholder="Имя"
             value={name}
-            onChange={(e) => setLogin(e.target.value)}
+            onChange={(e) => setName(e.target.value)}
           />
         </div>
         <div>
@@ -53,7 +64,7 @@ export default function Registration() {
             type="text"
             placeholder="Фамилия"
             value={surname}
-            onChange={(e) => setLogin(e.target.value)}
+            onChange={(e) => setSurname(e.target.value)}
           />
         </div>
         <div>
@@ -62,7 +73,7 @@ export default function Registration() {
             type="text"
             placeholder="Город"
             value={city}
-            onChange={(e) => setLogin(e.target.value)}
+            onChange={(e) => setCity(e.target.value)}
           />
         </div>
         <div>
@@ -71,7 +82,7 @@ export default function Registration() {
             type="text"
             placeholder="E-mail"
             value={email}
-            onChange={(e) => setLogin(e.target.value)}
+            onChange={(e) => setEmail(e.target.value)}
           />
         </div>
 
@@ -98,14 +109,11 @@ export default function Registration() {
               type="password"
               placeholder="Повторите пароль"
               value={copypassword}
-              onChange={(e) => setPassword(e.target.value)}
+              onChange={(e) => setCopypassword(e.target.value)}
             />
           </div>
         </div>
         <div className={s.container}>
-          {/* <button type="button" className={s.reg_btn} onClick={getDataUser}>
-            Войти
-          </button> */}
           <button type="button" className={s.reg_btn} onClick={getDataUser}>
             Зарегистрироваться
           </button>
