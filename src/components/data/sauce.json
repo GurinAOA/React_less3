@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "title": "Соус",
     "url": "soucefirst",
     "price": "70₽",
@@ -7,12 +8,14 @@
     "weight": "53г"
   },
   {
+    "id": "2",
     "url": "soucesecond",
     "price": "80₽",
     "description": "Сырный",
     "weight": "52г"
   },
   {
+    "id": "3",
     "url": "soucethird",
     "price": "70₽",
     "description": "Майонез",

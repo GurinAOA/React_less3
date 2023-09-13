@@ -5,7 +5,7 @@ export default function Btn(props) {
     <div className={s.container}>
       <button
         onClick={() => {
-          props.addToBasket(props.object.id);
+          props.updateBasket(props.id);
         }}
         className={s.btn}
       >

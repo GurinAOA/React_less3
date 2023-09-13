@@ -1,18 +1,18 @@
 [
-  {
+  {"id": "1",
     "title": "Комбо",
     "url": "combofirst",
     "price": "200₽",
     "description": "Комбо номер один",
     "weight": "420г"
   },
-  {
+  {"id": "2",
     "url": "combosecond",
     "price": "350₽",
     "description": "Комбо номер два",
     "weight": "520г"
   },
-  {
+  {"id": "3",
     "url": "combothird",
     "price": "240₽",
     "description": "Комбо номер три",

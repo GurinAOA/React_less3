@@ -5,36 +5,44 @@ import delivery from "../Main/images/free-icon-delivery-2362252.svg";
 import ItemBasket from "../ItemBasket/ItemBasket";
 
 import { useState } from "react";
+import { useEffect } from "react";
 
-export default function Basket() {
+export default function Basket({ id }) {
   const [basket, setBasket] = useState(basketJson);
+
+
+
+  useEffect(() => {
+    if (id) {
+      addToBasket(id);
+    }
+  },[id]);
 
   function delBasket(id) {
     const copyDelBasket = [...basket];
     const newCopyDelBasket = copyDelBasket.filter((item) => item.id !== id);
     setBasket(newCopyDelBasket);
-    
   }
   function addToBasket(id) {
     const copyAddBasket = [...basket];
-    const newCopyAddBasket = copyAddBasket.push(obj => obj.id === id);
+    console.log(copyAddBasket);
+    const newCopyAddBasket = copyAddBasket.push('object');
     setBasket(newCopyAddBasket);
-    
   }
 
-  function addTitle(){
-    setBasket([]);
-  }
+  // function addTitle() {
+  //   setBasket([]);
+  // }
   function getTotalSum() {
     let count = 0;
-    basketJson.forEach((item) => {
+    basket.forEach((item) => {
       count += item.number * item.sum;
     });
     return count;
   }
   function getTotalQuantity() {
     let count = 0;
-    basketJson.forEach((item) => {
+    basket.forEach((item) => {
       count += item.number;
     });
     return count;
@@ -47,15 +55,12 @@ export default function Basket() {
         <div className={s.quantity}>{getTotalQuantity()}</div>
       </div>
       <div className={s.wr_bag}>
-        {addTitle && 
-          <p Корзина пуста></p>
-
-        }
+        {/* {addTitle && <p Корзина пуста></p>} */}
         <div className={s.wr_bags_cards}>
           {basket.map((element, index) => (
             <ItemBasket
               basket={basket}
-              addToBasket={addToBasket}
+              // addToBasket={addToBasket}
               delBasket={delBasket}
               setBasket={setBasket}
               object={element}

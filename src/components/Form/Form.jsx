@@ -1,10 +1,12 @@
 import React from "react";
 import s from "./form.module.scss";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Form() {
   const [login, setLogin] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   function getDataUser() {
     const obj = {
@@ -16,11 +18,14 @@ export default function Form() {
     localStorage.setItem("user", JSON.stringify(obj));
   }
 
+  function followRegForm() {
+    navigate("/Register");
+  }
+
   return (
     <div className={s.wrapper}>
- 
       <form className={s.registrationform}>
-      <h2 className={s.registrationformtitle}>Авторизоваться</h2>
+        <h2 className={s.registrationformtitle}>Авторизоваться</h2>
         <div>
           <input
             className={s.registr_form_login}
@@ -40,10 +45,20 @@ export default function Form() {
           />
         </div>
         <div className={s.container}>
-        <button type="button" className={s.reg_btn} onClick={getDataUser}>
+          <button
+            type="button"
+            className={s.reg_btn_enter}
+            onClick={getDataUser}
+          >
             Войти
           </button>
-          <button type="button" className={s.reg_btn} onClick={getDataUser}>
+          <button
+            onClick={() => {
+              followRegForm();
+            }}
+            type="button"
+            className={s.reg_btn}
+          >
             Зарегистрироваться
           </button>
         </div>

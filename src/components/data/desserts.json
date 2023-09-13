@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "title": "Дессерты",
     "url": "dessertfirst",
     "price": "150₽",
@@ -7,12 +8,14 @@
     "weight": "512г"
   },
   {
+    "id": "2",
     "url": "dessertsecond",
     "price": "250₽",
     "description": "Супер вкусный",
     "weight": "512г"
   },
   {
+    "id": "3",
     "url": "dessertthird",
     "price": "170₽",
     "description": "Воздушный",

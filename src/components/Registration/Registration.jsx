@@ -1,11 +1,10 @@
 import React from "react";
 import s from "./registration.module.scss";
 import { useState } from "react";
-
+import { useNavigate } from "react-router-dom";
 
 export default function Registration() {
-
-  const [formReg, setFormReg] = useState (true)
+  // const [formReg, setFormReg] = useState(true);
 
   const [login, setLogin] = useState("");
   const [password, setPassword] = useState("");
@@ -14,6 +13,7 @@ export default function Registration() {
   const [name, setName] = useState("");
   const [surname, setSurname] = useState("");
   const [city, setCity] = useState("");
+  const navigate = useNavigate();
 
   function getDataUser() {
     const obj = {
@@ -35,19 +35,24 @@ export default function Registration() {
     localStorage.setItem("user", JSON.stringify(obj));
   }
 
-  function closeRegForm(){
-    setFormReg (false)
+  function closeRegForm() {
+    navigate("/");
   }
 
   return (
     <div className={s.wrapper}>
       <form className={s.registrationform}>
         <div className={s.wr_close}>
-        <h2 className={s.registrationformtitle}>Регистрация</h2>
-        <button    onClick={() => {
-         closeRegForm();
-        }}
-         className={s.window_close} type="button">X</button>
+          <h2 className={s.registrationformtitle}>Регистрация</h2>
+          <button
+            onClick={() => {
+              closeRegForm();
+            }}
+            className={s.window_close}
+            type="button"
+          >
+            X
+          </button>
         </div>
         <div>
           <input

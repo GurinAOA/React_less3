@@ -29,9 +29,15 @@ const arrData = [
 
 export default function Main(props) {
   const [count, setCount] = useState(0);
+  const [id, setId] = useState();
+
   function editCount(numbers) {
     setCount(numbers);
   }
+  function updateBasket(id) {
+    setId(id);
+  }
+
   return (
     <div className={s.container}>
       <div className={s.icons}>
@@ -39,10 +45,10 @@ export default function Main(props) {
       </div>
       <div className={s.mainwrap}>
         <div className={s.wrapper_bag}>
-          <Basket />
+          <Basket id={id} />
         </div>
         <div className={s.container_common}>
-            <Item arrData={arrData[count]} />
+          <Item arrData={arrData[count]} updateBasket={updateBasket} />
         </div>
       </div>
     </div>

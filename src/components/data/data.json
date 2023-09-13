@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "title": "Бургеры",
     "url": "burgerfirst",
     "price": "689₽",
@@ -7,30 +8,35 @@
     "weight": "520г"
   },
   {
+    "id": "2",
     "url": "burgersecond",
     "price": "550₽",
     "description": "Супер сырный",
     "weight": "512г"
   },
   {
+    "id": "3",
     "url": "photothird",
     "price": "639₽",
     "description": "Сытный",
     "weight": "580г"
   },
   {
+    "id": "4",
     "url": "burgerfourth",
     "price": "480₽",
     "description": "Тяжелый удар",
     "weight": "470г"
   },
   {
+    "id": "5",
     "url": "burgerfifth",
     "price": "450₽",
     "description": "Вечная классика",
     "weight": "450г"
   },
   {
+    "id": "6",
     "url": "burgersixth",
     "price": "560₽",
     "description": "Итальянский",

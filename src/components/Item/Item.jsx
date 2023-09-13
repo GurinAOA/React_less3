@@ -17,7 +17,7 @@ export default function Item(props) {
             <p className={s.price}>{element.price}</p>
             <p className={s.description}>{element.description}</p>
             <p className={s.weight}>{element.weight}</p>
-            <Btn />
+            <Btn updateBasket={props.updateBasket} id={element.id}/>
           </div>
         ))}
       </div>
