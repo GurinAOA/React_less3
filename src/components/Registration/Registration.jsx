@@ -38,7 +38,9 @@ export default function Registration() {
   function closeRegForm() {
     navigate("/");
   }
-
+  function returnToAuthForm() {
+    navigate("/Authorization");
+  }
   return (
     <div className={s.wrapper}>
       <form className={s.registrationform}>
@@ -119,6 +121,15 @@ export default function Registration() {
           </div>
         </div>
         <div className={s.container}>
+          <button
+            type="button"
+            className={s.reg_btn}
+            onClick={() => {
+              returnToAuthForm();
+            }}
+          >
+            Войти
+          </button>
           <button type="button" className={s.reg_btn} onClick={getDataUser}>
             Зарегистрироваться
           </button>

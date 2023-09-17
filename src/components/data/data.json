@@ -7,6 +7,7 @@
     "description": "Мясная бомба",
     "weight": "520г"
   },
+
   {
     "id": "2",
     "url": "burgersecond",
@@ -14,6 +15,7 @@
     "description": "Супер сырный",
     "weight": "512г"
   },
+
   {
     "id": "3",
     "url": "photothird",
@@ -21,6 +23,7 @@
     "description": "Сытный",
     "weight": "580г"
   },
+
   {
     "id": "4",
     "url": "burgerfourth",
@@ -28,6 +31,7 @@
     "description": "Тяжелый удар",
     "weight": "470г"
   },
+
   {
     "id": "5",
     "url": "burgerfifth",
@@ -35,6 +39,7 @@
     "description": "Вечная классика",
     "weight": "450г"
   },
+
   {
     "id": "6",
     "url": "burgersixth",

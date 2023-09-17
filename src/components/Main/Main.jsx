@@ -29,7 +29,8 @@ const arrData = [
 
 export default function Main(props) {
   const [count, setCount] = useState(0);
-  const [id, setId] = useState();
+  const [id, setId] = useState(false);
+  console.log(arrData)
 
   function editCount(numbers) {
     setCount(numbers);

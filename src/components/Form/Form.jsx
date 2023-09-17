@@ -17,15 +17,28 @@ export default function Form() {
     setPassword("");
     localStorage.setItem("user", JSON.stringify(obj));
   }
-
-  function followRegForm() {
+  function returnToRegForm() {
     navigate("/Register");
+  }
+  function closeAuthForm() {
+    navigate("/");
   }
 
   return (
     <div className={s.wrapper}>
       <form className={s.registrationform}>
-        <h2 className={s.registrationformtitle}>Авторизоваться</h2>
+        <div className={s.wr_close}>
+          <h2 className={s.registrationformtitle}>Авторизоваться</h2>
+          <button
+            onClick={() => {
+              closeAuthForm();
+            }}
+            className={s.window_close}
+            type="button"
+          >
+            X
+          </button>
+        </div>
         <div>
           <input
             className={s.registr_form_login}
@@ -45,18 +58,14 @@ export default function Form() {
           />
         </div>
         <div className={s.container}>
-          <button
-            type="button"
-            className={s.reg_btn_enter}
-            onClick={getDataUser}
-          >
+          <button type="button" className={s.reg_btn} onClick={getDataUser}>
             Войти
           </button>
           <button
-            onClick={() => {
-              followRegForm();
-            }}
             type="button"
+            onClick={() => {
+              returnToRegForm();
+            }}
             className={s.reg_btn}
           >
             Зарегистрироваться

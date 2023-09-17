@@ -3,9 +3,7 @@ import s from "./ItemBasket.module.scss";
 import delBasket from "../../img/delbasketpng.png";
 
 export default function ItemBasket(props) {
-  //   function delBasket() {
-  //     props.setBasket([]);
-  //   }
+
 
   function minus(id) {
     const arr = props.basket.map((item) => {
@@ -27,12 +25,12 @@ export default function ItemBasket(props) {
     });
     props.setBasket(arr);
   }
-  // delBasket();
+
   return (
     <div className={s.basket_wrap}>
       <img
         className={s.img}
-        src={require(`../Main/images/${props.object.url}.png`)}
+        src={require(`../../img/${props.object.url}.png`)}
         alt="food"
       />
       <div className={s.wr_bags_text}>
