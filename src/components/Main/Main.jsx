@@ -14,7 +14,14 @@ import vok from "../data/vog.json";
 import desserts from "../data/desserts.json";
 import sauce from "../data/sauce.json";
 import { useState } from "react";
+import GET from "../../Services/GET";
 
+// async function getBurger() {
+//   const arrBurger = await GET.getBurger();
+//   console.log(arrBurger);
+// return arrBurger
+// }
+// getBurger();
 const arrData = [
   card,
   snacks,
@@ -30,7 +37,7 @@ const arrData = [
 export default function Main(props) {
   const [count, setCount] = useState(0);
   const [id, setId] = useState(false);
-  console.log(arrData)
+  console.log(arrData);
 
   function editCount(numbers) {
     setCount(numbers);

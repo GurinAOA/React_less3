@@ -1,0 +1,247 @@
+{
+  "burgers": [
+    {
+      "id": "1",
+      "title": "Бургеры",
+      "url": "burgerfirst",
+      "price": "689₽",
+      "description": "Мясная бомба",
+      "weight": "520г",
+      "sum": 689,
+      "number": 1
+    },
+
+    {
+      "id": "2",
+      "url": "burgersecond",
+      "price": "550₽",
+      "description": "Супер сырный",
+      "weight": "512г",
+      "sum": 512,
+      "number": 2
+    },
+
+    {
+      "id": "3",
+      "url": "photothird",
+      "price": "639₽",
+      "description": "Сытный",
+      "weight": "580г",
+      "sum": 639,
+      "number": 3
+    },
+
+    {
+      "id": "4",
+      "url": "burgerfourth",
+      "price": "480₽",
+      "description": "Тяжелый удар",
+      "weight": "470г",
+      "sum": 480,
+      "number": 4
+    },
+
+    {
+      "id": "5",
+      "url": "burgerfifth",
+      "price": "450₽",
+      "description": "Вечная классика",
+      "weight": "450г",
+      "sum": 450,
+      "number": 5
+    },
+
+    {
+      "id": "6",
+      "url": "burgersixth",
+      "price": "560₽",
+      "description": "Итальянский",
+      "weight": "510г",
+      "sum": 560,
+      "number": 6
+    }
+  ],
+  "snacks": [
+    {
+      "id": "7",
+      "title": "Закуски",
+      "url": "snackfirst",
+      "price": "370₽",
+      "description": "На компанию",
+      "weight": "253г",
+      "sum": 370,
+      "number": 7
+    },
+    {
+      "id": "8",
+      "url": "snacksecond",
+      "price": "380₽",
+      "description": "Фуршетная",
+      "weight": "252г",
+      "sum": 380,
+      "number": 8
+    },
+    {
+      "id": "9",
+      "url": "snackthird",
+      "price": "370₽",
+      "description": "Аппетитная",
+      "weight": "352г",
+      "sum": 370,
+      "number": 9
+    }
+  ],
+  "hot-dogs": [
+    {
+      "id": "10",
+      "title": "ХотДог",
+      "url": "hotdogfirst",
+      "price": "250₽",
+      "description": "С колбаской",
+      "weight": "212г",
+      "sum": 250,
+      "number": 10
+    },
+    {
+      "id": "11",
+      "url": "hotdogsecond",
+      "price": "350₽",
+      "description": "С сосиской",
+      "weight": "113г",
+      "sum": 350,
+      "number": 11
+    },
+    {
+      "id": "12",
+      "url": "hotdogthird",
+      "price": "180₽",
+      "description": "Полезный",
+      "weight": "112г",
+      "sum": 180,
+      "number": 12
+    }
+  ],
+  "combo": [
+    {
+      "id": "13",
+      "title": "Комбо",
+      "url": "combofirst",
+      "price": "200₽",
+      "description": "Комбо номер один",
+      "weight": "420г",
+      "sum": 200,
+      "number": 13
+    },
+    {
+      "id": "14",
+      "url": "combosecond",
+      "price": "350₽",
+      "description": "Комбо номер два",
+      "weight": "520г",
+      "sum": 350,
+      "number": 14
+    },
+    {
+      "id": "15",
+      "url": "combothird",
+      "price": "240₽",
+      "description": "Комбо номер три",
+      "weight": "820г",
+      "sum": 240,
+      "number": 15
+    }
+  ],
+
+  "shaurma": [
+    {
+      "id": "16",
+      "title": "Шаурма",
+      "url": "shaurmafirst",
+      "price": "470₽",
+      "description": "С курицей",
+      "weight": "253г",
+      "sum": 470,
+      "number": 16
+    },
+    {
+      "id": "17",
+      "url": "shaurmasecond",
+      "price": "480₽",
+      "description": "Со свининой",
+      "weight": "252г",
+      "sum": 480,
+      "number": 17
+    },
+    {
+      "id": "18",
+      "url": "shaurmathird",
+      "price": "570₽",
+      "description": "С рыбой",
+      "weight": "352г",
+      "sum": 570,
+      "number": 18
+    }
+  ],
+
+  "pizza": [
+    {
+      "id": "19",
+      "title": "Пицца",
+      "url": "pizzafirst",
+      "price": "150₽",
+      "description": "Пепперони",
+      "weight": "512г",
+      "sum": 150,
+      "number": 19
+    },
+    {
+      "id": "20",
+      "url": "pizzasecond",
+      "price": "250₽",
+      "description": "Сырная",
+      "weight": "512г",
+      "sum": 250,
+      "number": 20
+    },
+    {
+      "id": "21",
+      "url": "pazzathird",
+      "price": "170₽",
+      "description": "Сезонная",
+      "weight": "512г",
+      "sum": 170,
+      "number": 21
+    }
+  ],
+
+  "wok": [
+    {
+      "id": "22",
+      "title": "Вок",
+      "url": "vokfirst",
+      "price": "370₽",
+      "description": "Супер вок",
+      "weight": "553г",
+      "sum": 370,
+      "number": 22
+    },
+    {
+      "id": "23",
+      "url": "voksecond",
+      "price": "380₽",
+      "description": "Острый вок",
+      "weight": "552г",
+      "sum": 380,
+      "number": 23
+    },
+    {
+      "id": "24",
+      "url": "vokthird",
+      "price": "370₽",
+      "description": "Сытный вок",
+      "weight": "552г",
+      "sum": 370,
+      "number": 24
+    }
+  ]
+}

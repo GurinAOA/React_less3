@@ -5,7 +5,9 @@
       "url": "burgerfirst",
       "price": "689₽",
       "description": "Мясная бомба",
-      "weight": "520г"
+      "weight": "520г",
+      "sum": 689,
+      "number":1
     },
   
     {
@@ -13,7 +15,9 @@
       "url": "burgersecond",
       "price": "550₽",
       "description": "Супер сырный",
-      "weight": "512г"
+      "weight": "512г",
+      "sum": 512,
+      "number":2
     },
   
     {
@@ -21,7 +25,9 @@
       "url": "photothird",
       "price": "639₽",
       "description": "Сытный",
-      "weight": "580г"
+      "weight": "580г",
+      "sum": 639,
+      "number":3
     },
   
     {
@@ -29,7 +35,9 @@
       "url": "burgerfourth",
       "price": "480₽",
       "description": "Тяжелый удар",
-      "weight": "470г"
+      "weight": "470г",
+      "sum": 480,
+      "number":4
     },
   
     {
@@ -37,7 +45,9 @@
       "url": "burgerfifth",
       "price": "450₽",
       "description": "Вечная классика",
-      "weight": "450г"
+      "weight": "450г",
+      "sum": 450,
+      "number":5
     },
   
     {
@@ -45,7 +55,9 @@
       "url": "burgersixth",
       "price": "560₽",
       "description": "Итальянский",
-      "weight": "510г"
+      "weight": "510г",
+      "sum": 560,
+      "number":6
     },
   
     {
