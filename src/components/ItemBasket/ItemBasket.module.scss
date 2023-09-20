@@ -152,6 +152,7 @@
   background: #f2f2f3;
 }
 .basket_wrap {
+  width:268px;
   display: flex;
   flex-direction: row;
   margin-top: 25px;
@@ -192,4 +193,6 @@
 }
 .img{
   border: 15px;
+  width:60px;
+  height: 60px;
 }
