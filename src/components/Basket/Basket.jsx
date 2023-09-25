@@ -3,13 +3,12 @@ import s from "../Basket/basket.module.scss";
 // import basketJson from "../data/basket.json";
 import delivery from "../Main/images/free-icon-delivery-2362252.svg";
 import ItemBasket from "../ItemBasket/ItemBasket";
-import data from "../data/all.json";
-
 import { useState } from "react";
 import { useEffect } from "react";
 
-export default function Basket({ id }) {
+export default function Basket({ id},props) {
   const [basket, setBasket] = useState([]);
+
 
   useEffect(() => {
     if (!id) return;
@@ -23,7 +22,7 @@ export default function Basket({ id }) {
   }
   function addToBasket(id) {
     let obj = false;
-    data.forEach((element) => {
+    id.basketCards.forEach((element) => {
       if (element.id == id) {
         obj = element;
       }
@@ -65,6 +64,8 @@ export default function Basket({ id }) {
               setBasket={setBasket}
               object={element}
               key={index}
+        
+           
             />
           ))}
           <div className={s.wr_sum}>

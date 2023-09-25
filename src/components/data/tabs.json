@@ -1,47 +1,56 @@
 [
-    {     
-        "categories": "Бургеры",
-        "url": "burger",
-        "id":1
-    },
-    {     
-        "categories": "Закуски",
-        "url":"snack" ,
-        "id":2 
-    },
-    {     
-        "categories": "Хот-доги",
-        "url":"hotdog",
-        "id":3  
-    },
-    {     
-        "categories": "Комбо",
-        "url":"combo",
-        "id":4  
-    },
-    {     
-        "categories": "Шаурма",
-        "url":"shaurma",
-        "id":5  
-    },
-    {     
-        "categories": "Пицца",
-        "url":"pizza",
-        "id":6  
-    },
-    {     
-        "categories": "Вок",
-        "url":"vok",
-        "id":7  
-    },
-    {     
-        "categories": "Десерты",
-        "url":"desserts",
-        "id":8  
-    },
-    {     
-        "categories": "Соусы",
-        "url":"sauce",
-        "id":9  
-    }
+  {
+    "categories": "Бургеры",
+    "url": "burger",
+    "id": 1,
+    "title": "burgers"
+  },
+  {
+    "categories": "Закуски",
+    "url": "snack",
+    "id": 2,
+    "title": "snacks"
+  },
+  {
+    "categories": "Хот-доги",
+    "url": "hotdog",
+    "id": 3,
+    "title": "hot-dogs"
+  },
+  {
+    "categories": "Комбо",
+    "url": "combo",
+    "id": 4,
+    "title": "combo"
+  },
+  {
+    "categories": "Шаурма",
+    "url": "shaurma",
+    "id": 5,
+    "title": "shaurma"
+  },
+  {
+    "categories": "Пицца",
+    "url": "pizza",
+    "id": 6,
+    "title": "pizza"
+  },
+  {
+    "categories": "Вок",
+    "url": "vok",
+    "id": 7,
+    "title": "wok"
+  },
+  {
+    "categories": "Десерты",
+    "url": "desserts",
+    "id": 8,
+    "title": "desserts"
+  },
+  {
+    "categories": "Соусы",
+    "url": "sauce",
+    "id": 9,
+    "title": "sauce"
+  }
 ]

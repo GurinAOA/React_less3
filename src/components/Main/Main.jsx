@@ -1,43 +1,38 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Item from "../Item/Item";
 import Tabs from "../Tabs/Tabs";
 import s from "./main.module.scss";
-import card from "../data/data.json";
 import Basket from "../Basket/Basket";
-// import tabs from "../data/tabs.json"
-import snacks from "../data/snacks.json";
-import hotdog from "../data/hotdog.json";
-import combo from "../data/combo.json";
-import shaurma from "../data/shaurma.json";
-import pizza from "../data/pizza.json";
-import vok from "../data/vog.json";
-import desserts from "../data/desserts.json";
-import sauce from "../data/sauce.json";
+import tabsJson from "../data/tabs.json";
 import { useState } from "react";
 import GET from "../../Services/GET";
 
-// async function getBurger() {
-//   const arrBurger = await GET.getBurger();
-//   console.log(arrBurger);
-// return arrBurger
-// }
-// getBurger();
-const arrData = [
-  card,
-  snacks,
-  hotdog,
-  combo,
-  shaurma,
-  pizza,
-  vok,
-  desserts,
-  sauce,
-];
-
 export default function Main(props) {
   const [count, setCount] = useState(0);
+  const [arrProduct, setArrProduct] = useState(false);
+  const [basketCards, setBasketCards] = useState(false);
+  const [flag, setFlag] = useState(false);
   const [id, setId] = useState(false);
-  console.log(arrData);
+  const productTab = tabsJson[count].title;
+
+  useEffect(() => {
+    getAllProducts();
+  }, []);
+
+  async function getProduct() {
+    const allproduct = await GET.getProduct();
+    setArrProduct(allproduct);
+  }
+  async function getBasket() {
+    const allbasket = await GET.getBasket();
+    setBasketCards(allbasket);
+  }
+
+  async function getAllProducts() {
+    await getProduct();
+    await getBasket();
+    setFlag(true);
+  }
 
   function editCount(numbers) {
     setCount(numbers);
@@ -46,6 +41,10 @@ export default function Main(props) {
     setId(id);
   }
 
+  if (!flag) return <h1>Loading...</h1>;
+  // console.log(arrProduct);
+  console.log(basketCards);
+
   return (
     <div className={s.container}>
       <div className={s.icons}>
@@ -53,10 +52,10 @@ export default function Main(props) {
       </div>
       <div className={s.mainwrap}>
         <div className={s.wrapper_bag}>
-          <Basket id={id} />
+          <Basket id={id} basketCards={basketCards}/>
         </div>
         <div className={s.container_common}>
-          <Item arrData={arrData[count]} updateBasket={updateBasket} />
+          <Item productTab={arrProduct[productTab]} updateBasket={updateBasket} />
         </div>
       </div>
     </div>

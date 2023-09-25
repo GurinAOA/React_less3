@@ -5,9 +5,9 @@ import Btn from "../Btn/Btn";
 export default function Item(props) {
   return (
     <div className={s.container}>
-      <span className={s.wr_title}>{props.arrData[0].title}</span>
+      <span className={s.wr_title}>{props.productTab[0].title}</span>
       <div className={s.wr}>
-        {props.arrData.map((element, index) => (
+        {props.productTab.map((element, index) => (
           <div className={s.cont} key={index}>
             <img
               className={s.img}
