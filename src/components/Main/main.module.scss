@@ -50,6 +50,8 @@
 .mainwrap {
   display: flex;
   flex-direction: row;
+  min-height: 800px;
+  width: 100%;
 }
 .wrapper {
   max-width: 1290px;
@@ -68,8 +70,7 @@
 }
 .container_common {
   width: 1100px;
-  min-height: 700px;
-
+  min-height: 800px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;

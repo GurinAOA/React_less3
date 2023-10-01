@@ -5,44 +5,46 @@ import delivery from "../Main/images/free-icon-delivery-2362252.svg";
 import ItemBasket from "../ItemBasket/ItemBasket";
 import { useState } from "react";
 import { useEffect } from "react";
+import { MyContext } from "../../Context/MyContext";
+import { useContext } from "react";
 
-export default function Basket({ id},props) {
-  const [basket, setBasket] = useState([]);
+export default function Basket() {
+  // const [basket, setBasket] = useState([]);
 
+  const { basketCards, setBasket } = useContext(MyContext);
+  // useEffect(() => {
+  //   if (!id) return;
+  //   addToBasket(id);
+  // }, [id]);
 
-  useEffect(() => {
-    if (!id) return;
-    addToBasket(id);
-  }, [id]);
-
-  function delBasket(id) {
-    const copyDelBasket = [...basket];
-    const newCopyDelBasket = copyDelBasket.filter((item) => item.id !== id);
-    setBasket(newCopyDelBasket);
-  }
-  function addToBasket(id) {
-    let obj = false;
-    id.basketCards.forEach((element) => {
-      if (element.id == id) {
-        obj = element;
-      }
-    });
-    if (!obj) return;
-    const newBasket = [...basket];
-    newBasket.push(obj);
-    setBasket(newBasket);
-  }
+  // function delBasket(id) {
+  //   const copyDelBasket = [...basket];
+  //   const newCopyDelBasket = copyDelBasket.filter((item) => item.id !== id);
+  //   setBasket(newCopyDelBasket);
+  // }
+  // function addToBasket(id) {
+  //   let obj = false;
+  //   id.basketCards.forEach((element) => {
+  //     if (element.id == id) {
+  //       obj = element;
+  //     }
+  //   });
+  //   if (!obj) return;
+  //   const newBasket = [...basket];
+  //   newBasket.push(obj);
+  //   setBasket(newBasket);
+  // }
 
   function getTotalSum() {
     let count = 0;
-    basket.forEach((item) => {
+    basketCards.forEach((item) => {
       count += item.number * item.sum;
     });
     return count;
   }
   function getTotalQuantity() {
     let count = 0;
-    basket.forEach((item) => {
+    basketCards.forEach((item) => {
       count += item.number;
     });
     return count;
@@ -57,15 +59,13 @@ export default function Basket({ id},props) {
       <div className={s.wr_bag}>
         <p className={s.wr_bag_empty}>Корзина пуста</p>
         <div className={s.wr_bags_cards}>
-          {basket.map((element, index) => (
+          {basketCards.map((element, index) => (
             <ItemBasket
-              basket={basket}
-              delBasket={delBasket}
+              basketCards={basketCards}
+              // delBasket={delBasket}
               setBasket={setBasket}
               object={element}
               key={index}
-        
-           
             />
           ))}
           <div className={s.wr_sum}>
